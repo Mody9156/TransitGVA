@@ -7,15 +7,6 @@
 
 import Foundation
 
-// Réponse brute de l'API TPG
-struct TPGResponse: Codable {
-    let departures: [TPGDeparture]
-
-    enum CodingKeys: String, CodingKey {
-        case departures = "Departures"
-    }
-}
-
 struct TPGDeparture: Codable {
     let lineCode: String
     let destinationName: String

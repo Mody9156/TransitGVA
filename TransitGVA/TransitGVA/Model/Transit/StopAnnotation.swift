@@ -8,7 +8,7 @@
 import MapKit
 
 // Représente un arrêt de transport sur la carte
-final class StopAnnotation: NSObject, MKAnnotation {
+final class StopAnnotation: NSObject, MKAnnotation, Identifiable {
     let id: UUID
     let coordinate: CLLocationCoordinate2D
     let title: String?

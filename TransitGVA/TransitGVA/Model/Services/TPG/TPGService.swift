@@ -134,6 +134,9 @@ actor TPGService {
         let formatter = ISO8601DateFormatter()
         return formatter.date(from: str)
     }
+    
+    
+    
 }
 // MARK: - Locations decoding
 private struct LocationsResponse: Codable {
@@ -154,4 +157,5 @@ private struct LocationCoordinate: Codable {
     let x: Double? // latitude
     let y: Double? // longitude
 }
+
 

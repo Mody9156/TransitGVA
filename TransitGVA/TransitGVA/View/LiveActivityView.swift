@@ -121,5 +121,5 @@ struct TransitLiveActivityWidget: Widget {
     }
 }
 #Preview {
-    LiveActivityView()
+    TransitLiveActivityView()
 }

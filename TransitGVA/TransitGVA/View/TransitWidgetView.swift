@@ -147,5 +147,11 @@ struct TransitGVAWidget: Widget {
 }
 
 #Preview {
-    TransitWidgetView()
+    let sampleDepartures: [Departure] = [
+        Departure(line: "18", destination: "Meyrin-Gravière", minutesLeft: 4, scheduledTime: nil),
+        Departure(line: "3", destination: "Onex-Cité", minutesLeft: 8, scheduledTime: nil),
+        Departure(line: "14", destination: "P+R Bernex", minutesLeft: 12, scheduledTime: nil)
+    ]
+    let entry = TransitEntry(date: .now, departures: sampleDepartures, stopName: "Genève, gare Cornavin")
+    return TransitWidgetView(entry: entry)
 }

@@ -83,12 +83,11 @@ actor TPGService {
         return formatter.date(from: str)
     }
 }
+///////////// séparer
 
 // MARK: - Modèles internes (opendata.ch)
 
-private struct StationboardResponse: Codable {
-    let stationboard: [StationboardEntry]
-}
+
 
 private struct StationboardEntry: Codable {
     let number: String       // numéro de ligne, ex: "18"

@@ -53,7 +53,6 @@ struct TransitLiveActivityView: View {
 }
 
 // MARK: - Widget Bundle (obligatoire pour Live Activities)
-
 @main
 struct TransitWidgetBundle: WidgetBundle {
     var body: some Widget {
@@ -120,6 +119,21 @@ struct TransitLiveActivityWidget: Widget {
         }
     }
 }
-#Preview {
-    TransitLiveActivityView()
+
+#Preview("Live Activity Preview") {
+    // Mock data for preview
+    let attributes = TransitActivityAttributes(
+        lineName: "12",
+        destination: "Cornavin",
+        stopName: "Bel-Air"
+    )
+    let state = TransitActivityAttributes.ContentState(
+        minutesLeft: 3,
+        isImminent: false,
+        nextDeparture: "12:34"
+    )
+
+    return TransitLiveActivityView(attributes: attributes, state: state)
+    .previewLayout(.sizeThatFits)
+    .padding()
 }

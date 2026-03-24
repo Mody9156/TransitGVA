@@ -11,7 +11,7 @@ import SwiftUI
 struct TransitGVAApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DeparturesView()
         }
     }
 }

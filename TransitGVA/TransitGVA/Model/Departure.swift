@@ -7,7 +7,6 @@
 
 import Foundation
 
-// Modèle propre utilisé dans l'UI
 struct Departure: Identifiable {
     let id = UUID()
     let line: String

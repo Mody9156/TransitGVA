@@ -7,6 +7,6 @@
 
 import Foundation
 
-private struct StationboardResponse: Codable {
+ struct StationboardResponse: Codable {
     let stationboard: [StationboardEntry]
 }

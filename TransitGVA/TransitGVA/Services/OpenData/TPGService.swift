@@ -35,6 +35,7 @@ actor TPGService {
 
         // Appel réseau avec async/await
         let (data, response): (Data, URLResponse)
+        
         do {
             (data, response) = try await URLSession.shared.data(from: url)
         } catch {
@@ -82,19 +83,4 @@ actor TPGService {
         let formatter = ISO8601DateFormatter()
         return formatter.date(from: str)
     }
-}
-///////////// séparer
-
-// MARK: - Modèles internes (opendata.ch)
-
-
-
-private struct StationboardEntry: Codable {
-    let number: String       // numéro de ligne, ex: "18"
-    let to: String           // destination
-    let stop: StopInfo
-}
-
-private struct StopInfo: Codable {
-    let departure: String?   // ISO8601
 }

@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 enum TPGError: LocalizedError {
     case invalidURL
     case networkError(Error)

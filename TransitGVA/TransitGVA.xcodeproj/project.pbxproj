@@ -9,10 +9,17 @@
 /* Begin PBXBuildFile section */
 		737DCCCC2F72F7B8002A7ECB /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737DCCCB2F72F7B8002A7ECB /* WidgetKit.framework */; };
 		737DCCCE2F72F7B8002A7ECB /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737DCCCD2F72F7B8002A7ECB /* SwiftUI.framework */; };
-		737DCCDB2F72F7B9002A7ECB /* LiveActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 737DCCC92F72F7B8002A7ECB /* LiveActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		737DCCDB2F72F7B9002A7ECB /* LiveActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 737DCCC92F72F7B8002A7ECB /* LiveActivityExtension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4FAEF8ED2F77E6C50008FB89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73515C342F71D035007140D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 737DCCC82F72F7B8002A7ECB;
+			remoteInfo = LiveActivityExtension;
+		};
 		73515C4A2F71D036007140D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 73515C342F71D035007140D6 /* Project object */;
@@ -169,6 +176,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4FAEF8EE2F77E6C50008FB89 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				73515C3E2F71D035007140D6 /* TransitGVA */,
@@ -359,6 +367,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4FAEF8EE2F77E6C50008FB89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 737DCCC82F72F7B8002A7ECB /* LiveActivityExtension */;
+			targetProxy = 4FAEF8ED2F77E6C50008FB89 /* PBXContainerItemProxy */;
+		};
 		73515C4B2F71D036007140D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 73515C3B2F71D035007140D6 /* TransitGVA */;
